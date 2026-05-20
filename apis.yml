@@ -13,5 +13,7 @@ modified: '2026-05-05'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/veolia-environnement
   - type: Website
     url: https://www.veolia.com/
