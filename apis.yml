@@ -17,3 +17,5 @@ common:
     url: https://www.linkedin.com/company/veolia-environnement
   - type: Website
     url: https://www.veolia.com/
+  - type: LLMsTxt
+    url: https://www.veolia.com/llms.txt
