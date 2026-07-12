@@ -13,9 +13,13 @@ modified: '2026-05-05'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/veolia-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/veolia-environnement
   - type: Website
     url: https://www.veolia.com/
   - type: LlmsText
     url: https://www.veolia.com/llms.txt
+  - type: Blog
+    url: https://www.veolia.com/en/rss-press-releases
