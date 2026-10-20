@@ -1,7 +1,11 @@
 aid: veolia
+
 url: https://raw.githubusercontent.com/api-evangelist/veolia/refs/heads/main/apis.yml
+
 name: Veolia
+
 type: Index
+
 deliveryModel:
   model: unknown
   open_source: false
@@ -13,6 +17,7 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -24,17 +29,35 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/veolia.png
+
 tags:
   - Waste Management
   - Water Treatment
   - Environmental Services
+  - Energy
+  - Recycling
+
 description: 'A French multinational corporation and the global leader in environmental services including water management, waste management, and energy services. Operates in nearly 50 countries providing solutions for water treatment, waste recycling, and pollution remediation.'
+
 created: '2026-05-05'
-modified: '2026-05-05'
+
+modified: '2026-10-20'
+
 specificationVersion: '0.23'
-apis: []
+
 common:
+  - type: LLMsTxt
+    url: llms/veolia-llms.txt
+  - type: Hosts
+    url: hosts/veolia-hosts.yml
+  - type: IntegrationEdges
+    url: integrations/veolia-integration-edges.yml
+  - type: Vendors
+    url: vendors/veolia-vendors.yml
+  - type: Newsroom
+    url: https://www.veolia.com/fr/newsroom/actualites
   - type: DomainSecurity
     url: security/veolia-domain-security.yml
   - type: LinkedIn
@@ -45,3 +68,36 @@ common:
     url: https://www.veolia.com/llms.txt
   - type: Blog
     url: https://www.veolia.com/en/rss-press-releases
+  - type: Blog
+    url: https://www.veolia.com/fr/blog
+  - type: PrivacyPolicy
+    url: https://www.veolia.com/en/privacy-policy
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-20'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.veolia.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v5
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Veolia publishes corporate, press and careers sites but no developer portal or public API; api.veolia.com returns 404 at its root and no contract was found on any of its six probed hosts.
+  evidence:
+    - url: https://api.veolia.com/
+      status: 404
+    - url: https://www.veolia.com/
+      status: 200
+  checked: '2026-10-20'

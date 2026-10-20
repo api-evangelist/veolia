@@ -1,3 +1,29 @@
+generated: '2026-10-20'
+method: searched
+source:
+- https://edge.isometric.com/graphql
+- https://public-api.goldstandard.org/projects?page=1&size=100
+- https://puro.earth/puro_facility-sitemap.xml
+- https://www.cdr.fyi/sitemap.xml
+- https://www.icvcm.org/assessment-status/
+- https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV
+- https://zapier.com/apps/veolia/integrations
+- https://n8n.io/integrations/veolia/
+- https://composio.dev/toolkits/veolia
+- https://monid.ai/tools/veolia
+checked:
+- https://edge.isometric.com/graphql
+- https://public-api.goldstandard.org/projects?page=1&size=100
+- https://puro.earth/puro_facility-sitemap.xml
+- https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV
+- https://www.cdr.fyi/sitemap.xml
+- https://www.icvcm.org/assessment-status/
+- https://composio.dev/toolkits/veolia
+- https://monid.ai/tools/veolia
+- https://n8n.io/integrations/veolia/
+- https://zapier.com/apps/veolia/integrations
+summary: null
+marketplace_apps: []
 edges:
 - partner_name: US EPA (RCRA hazardous-waste handler registration)
   partner: null
@@ -43,19 +69,4 @@ edges:
     - VEOLIA ES TECHNICAL SOLUTIONS CORP (EPA ID NJD080631369)
   detected_by: sweep-carbon-environment.py
   first_seen: '2026-10-19'
-generated: '2026-10-19'
-method: searched
-source:
-- https://edge.isometric.com/graphql
-- https://public-api.goldstandard.org/projects?page=1&size=100
-- https://puro.earth/puro_facility-sitemap.xml
-- https://www.cdr.fyi/sitemap.xml
-- https://www.icvcm.org/assessment-status/
-- https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV
-checked:
-- https://edge.isometric.com/graphql
-- https://public-api.goldstandard.org/projects?page=1&size=100
-- https://puro.earth/puro_facility-sitemap.xml
-- https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV
-- https://www.cdr.fyi/sitemap.xml
-- https://www.icvcm.org/assessment-status/
+templates: []
